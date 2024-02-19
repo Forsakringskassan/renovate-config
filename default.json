@@ -1,0 +1,81 @@
+{
+    "extends": [
+        ":automergeBranch",
+        ":automergeMinor",
+        ":disableDependencyDashboard",
+        ":prNotPending",
+        ":rebaseStalePrs",
+        "replacements:all"
+    ],
+    "semanticCommits": true,
+    "major": {
+        "automergeType": "pr"
+    },
+    "ignoreDeps": ["vue-styleguidist", "vue-cli-plugin-styleguidist"],
+    "stabilityDays": 3,
+    "packageRules": [
+        {
+            "matchDepTypes": ["dependencies", "peerDependencies"],
+            "semanticCommitType": "fix"
+        },
+        {
+            "matchDepTypes": ["dependencies", "peerDependencies"],
+            "matchUpdateTypes": ["major"],
+            "semanticCommitType": "feat"
+        },
+        {
+            "matchDepTypes": ["peerDependencies"],
+            "matchUpdateTypes": ["major"],
+            "semanticCommitType": "feat",
+            "commitMessage": "{{{commitMessagePrefix}}} support {{depName}} v{{newMajor}} {{{commitMessageSuffix}}}"
+        },
+        {
+            "description": "Group all @forsakringskassan/eslint packages together",
+            "matchPackagePatterns": ["^@forsakringskassan/eslint-config"],
+            "groupName": "@forsakringskassan/eslint monorepo",
+            "groupSlug": "eslint-config-fk",
+            "stabilityDays": 0
+        },
+        {
+            "description": "Group all @forsakringskassan/jest-config packages together",
+            "matchPackagePatterns": ["^@forsakringskassan/jest-config"],
+            "groupName": "@forsakringskassan/jest-config monorepo",
+            "groupSlug": "jest-config-fk",
+            "stabilityDays": 0
+        },
+        {
+            "description": "Internal packages",
+            "matchPackagePrefixes": ["@forsakringskassan/"],
+            "stabilityDays": 0
+        },
+        {
+            "description": "Group all html-validate packages together",
+            "matchPackagePatterns": [
+                "^@html-validate/",
+                "^html-validate-",
+                "-html-validate$",
+                "^html-validate$"
+            ],
+            "excludePackageNames": ["@html-validate/release-scripts"],
+            "groupName": "html-validate",
+            "stabilityDays": 0
+        },
+        {
+            "description": "Add `@forsakringskassan/jest-config` `major` update to Jest monorepo.",
+            "packageRules": [
+                {
+                    "matchSourceUrlPrefixes": [
+                        "https://github.com/Forsakringskassan/jest-config.git"
+                    ],
+                    "matchUpdateTypes": ["major"],
+                    "groupName": "jest monorepo"
+                }
+            ]
+        },
+        {
+            "description": "Update each minor version of typescript separately",
+            "matchPackageNames": ["typescript"],
+            "separateMinorPatch": true
+        }
+    ]
+}
