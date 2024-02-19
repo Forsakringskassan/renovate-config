@@ -2,7 +2,7 @@
     "extends": [
         ":automergeBranch",
         ":automergeMinor",
-        ":disableDependencyDashboard",
+        ":dependencyDashboard",
         ":prNotPending",
         ":rebaseStalePrs",
         "replacements:all"
