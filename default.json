@@ -3,6 +3,7 @@
         ":automergeBranch",
         ":automergeMinor",
         ":dependencyDashboard",
+        ":label(renovate)",
         ":prNotPending",
         ":rebaseStalePrs",
         "replacements:all"
