@@ -8,6 +8,7 @@
         ":rebaseStalePrs",
         "replacements:all"
     ],
+    "rangeStrategy": "pin",
     "semanticCommits": true,
     "major": {
         "automergeType": "pr"
