@@ -46,6 +46,14 @@
             "stabilityDays": 0
         },
         {
+            "description": "Group all @fkui/* packages together",
+            "matchPackagePatterns": ["^@fkui/"],
+            "groupSlug": "fkui",
+            "groupName": "@fkui packages",
+            "separateMultipleMajor": true,
+            "stabilityDays": 0
+        },
+        {
             "description": "Internal packages",
             "matchPackagePrefixes": ["@forsakringskassan/"],
             "stabilityDays": 0
