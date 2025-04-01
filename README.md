@@ -1,11 +1,10 @@
 # Renovate sharable config for FK
 
-In `package.json` add:
+Create `renovate.json` with:
 
 ```json
 {
-    "renovate": {
-        "extends": ["local>forsakringskassan/renovate-config"]
-    }
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["local>forsakringskassan/renovate-config"]
 }
 ```
