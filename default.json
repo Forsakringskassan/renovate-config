@@ -17,7 +17,7 @@
         {
             "hostType": "maven",
             "matchHost": "maven.pkg.github.com",
-            "username": "renovate",
+            "username": "tomasbjerre",
             "password": "${GITHUB_READ_PACKAGES}"
         }
     ],
