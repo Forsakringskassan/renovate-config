@@ -1,4 +1,5 @@
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:js-lib",
         ":automergeBranch",
@@ -11,6 +12,16 @@
     ],
     "timezone": "Europe/Stockholm",
     "semanticCommits": true,
+
+    "hostRules": [
+        {
+            "hostType": "maven",
+            "matchHost": "maven.pkg.github.com",
+            "username": "Forsakringskassan",
+            "password": "${GITHUB_TOKEN}"
+        }
+    ],
+
     "major": {
         "automergeType": "pr"
     },
