@@ -13,15 +13,6 @@
     "timezone": "Europe/Stockholm",
     "semanticCommits": true,
 
-    "hostRules": [
-        {
-            "hostType": "maven",
-            "matchHost": "maven.pkg.github.com",
-            "username": "tomasbjerre",
-            "password": "${GITHUB_READ_PACKAGES}"
-        }
-    ],
-
     "major": {
         "automergeType": "pr"
     },
