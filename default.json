@@ -17,8 +17,8 @@
         {
             "hostType": "maven",
             "matchHost": "maven.pkg.github.com",
-            "username": "Forsakringskassan",
-            "password": "${GITHUB_TOKEN}"
+            "username": "renovate",
+            "password": "${GITHUB_READ_PACKAGES}"
         }
     ],
 
