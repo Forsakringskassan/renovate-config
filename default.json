@@ -18,6 +18,14 @@
     },
     "ignoreDeps": ["vue-styleguidist", "vue-cli-plugin-styleguidist"],
     "stabilityDays": 3,
+    "hostRules": [
+        {
+            "hostType": "maven",
+            "matchHost": "maven.pkg.github.com",
+            "username": "${PACKAGES_RW_ACTOR}",
+            "password": "${PACKAGES_RW_TOKEN}"
+        }
+    ],
     "packageRules": [
         {
             "description": "Only automerge during non-office hours",
