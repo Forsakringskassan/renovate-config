@@ -28,6 +28,12 @@
     ],
     "packageRules": [
         {
+          "description": "Internal FK Maven packages",
+          "matchDatasources": ["maven"],
+          "matchPackagePrefixes": ["se.fk."],
+          "registryUrls": ["https://maven.pkg.github.com/Forsakringskassan/*"]
+        },
+        {
             "description": "Only automerge during non-office hours",
             "automergeSchedule": ["* 0-8,16-23 * * 1-5", "* * * * 0,6"]
         },
