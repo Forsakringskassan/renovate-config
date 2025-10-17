@@ -20,17 +20,6 @@
     "stabilityDays": 3,
     "packageRules": [
         {
-          "description": "Public FK Maven packages on GitHub Packages",
-          "matchManagers": ["maven"],
-          "matchDatasources": [
-            "maven"
-          ],
-          "registryUrls": [
-            "https://maven.pkg.github.com/Forsakringskassan/repository"
-          ],
-          "matchPackagePrefixes": ["se.fk."]
-        },
-        {
             "description": "Only automerge during non-office hours",
             "automergeSchedule": ["* 0-8,16-23 * * 1-5", "* * * * 0,6"]
         },
