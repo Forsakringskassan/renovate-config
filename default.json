@@ -21,15 +21,14 @@
     "packageRules": [
         {
           "description": "Public FK Maven packages on GitHub Packages",
+          "matchManagers": ["maven"],
           "matchDatasources": [
             "maven"
           ],
           "registryUrls": [
             "https://maven.pkg.github.com/Forsakringskassan/repository"
           ],
-          "matchPackageNames": [
-            "/^se\\.fk\\./"
-          ]
+          "matchPackagePrefixes": ["se.fk."]
         },
         {
             "description": "Only automerge during non-office hours",
