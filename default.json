@@ -20,6 +20,10 @@
     "stabilityDays": 3,
     "packageRules": [
         {
+            "matchManagers": ["gradle", "maven"],
+            "excludePackagePrefixes": ["se.fk"],
+        },
+        {
             "description": "Only automerge during non-office hours",
             "automergeSchedule": ["* 0-8,16-23 * * 1-5", "* * * * 0,6"]
         },
