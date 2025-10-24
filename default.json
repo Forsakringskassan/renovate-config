@@ -20,7 +20,7 @@
     "stabilityDays": 3,
     "packageRules": [
         {
-          "matchManagers": ["docker"],
+          "matchManagers": ["docker", "dockerfile"],
           "enabled": false
         },
         {
