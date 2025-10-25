@@ -17,6 +17,7 @@
         "automergeType": "pr"
     },
     "ignoreDeps": ["vue-styleguidist", "vue-cli-plugin-styleguidist"],
+    "ignorePaths": ["**/.mvn/wrapper/maven-wrapper.properties"],
     "stabilityDays": 3,
     "packageRules": [
         {
