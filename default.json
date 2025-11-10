@@ -18,7 +18,7 @@
     },
     "ignoreDeps": ["vue-styleguidist", "vue-cli-plugin-styleguidist"],
     "ignorePaths": ["**/.mvn/wrapper/maven-wrapper.properties"],
-    "stabilityDays": 3,
+    "minimumReleaseAge": "3 days",
     "packageRules": [
         {
           "matchManagers": ["docker", "dockerfile"],
@@ -62,7 +62,7 @@
             "matchPackagePatterns": ["^@forsakringskassan/eslint-config"],
             "groupName": "@forsakringskassan/eslint monorepo",
             "groupSlug": "eslint-config-fk",
-            "stabilityDays": 0
+            "minimumReleaseAge": null
         },
 
         {
@@ -70,7 +70,7 @@
             "matchPackagePatterns": ["^@forsakringskassan/jest-config"],
             "groupName": "@forsakringskassan/jest-config monorepo",
             "groupSlug": "jest-config-fk",
-            "stabilityDays": 0
+            "minimumReleaseAge": null
         },
 
         {
@@ -79,13 +79,13 @@
             "groupSlug": "fkui",
             "groupName": "@fkui packages",
             "separateMultipleMajor": true,
-            "stabilityDays": 0
+            "minimumReleaseAge": null
         },
 
         {
             "description": "Internal packages",
             "matchPackagePrefixes": ["@forsakringskassan/"],
-            "stabilityDays": 0
+            "minimumReleaseAge": null
         },
 
         {
@@ -98,7 +98,7 @@
             ],
             "excludePackageNames": ["@html-validate/release-scripts"],
             "groupName": "html-validate",
-            "stabilityDays": 0
+            "minimumReleaseAge": null
         },
 
         {
