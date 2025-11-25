@@ -21,12 +21,12 @@
     "minimumReleaseAge": "3 days",
     "packageRules": [
         {
-          "matchManagers": ["docker", "dockerfile"],
-          "enabled": false
+            "matchManagers": ["docker", "dockerfile"],
+            "enabled": false
         },
         {
             "matchManagers": ["gradle", "maven"],
-            "excludePackagePrefixes": ["se.fk"],
+            "excludePackagePrefixes": ["se.fk"]
         },
         {
             "description": "Only automerge during non-office hours",
@@ -59,17 +59,31 @@
 
         {
             "description": "Group all @forsakringskassan/eslint packages together",
-            "matchPackagePatterns": ["^@forsakringskassan/eslint-config"],
-            "groupName": "@forsakringskassan/eslint monorepo",
-            "groupSlug": "eslint-config-fk",
+            "matchSourceUrls": [
+                "https://github.com/forsakringskassan/eslint-config"
+            ],
+            "groupName": "@forsakringskassan/eslint-config monorepo",
+            "groupSlug": "eslint-config-monorepo",
             "minimumReleaseAge": null
         },
 
         {
             "description": "Group all @forsakringskassan/jest-config packages together",
-            "matchPackagePatterns": ["^@forsakringskassan/jest-config"],
+            "matchSourceUrls": [
+                "https://github.com/forsakringskassan/jest-config"
+            ],
             "groupName": "@forsakringskassan/jest-config monorepo",
-            "groupSlug": "jest-config-fk",
+            "groupSlug": "jest-config-monorepo",
+            "minimumReleaseAge": null
+        },
+
+        {
+            "description": "Group all @forsakringskassan/prettier packages together",
+            "matchSourceUrls": [
+                "https://github.com/forsakringskassan/prettier-config"
+            ],
+            "groupName": "@forsakringskassan/prettier-config monorepo",
+            "groupSlug": "prettier-config-monorepo",
             "minimumReleaseAge": null
         },
 
