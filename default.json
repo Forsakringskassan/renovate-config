@@ -20,6 +20,7 @@
     "ignoreDeps": ["vue-styleguidist", "vue-cli-plugin-styleguidist"],
     "ignorePaths": ["**/.mvn/wrapper/maven-wrapper.properties"],
     "minimumReleaseAge": "3 days",
+    "lockFileMaintenance": { "enabled": true },
     "packageRules": [
         {
             "matchManagers": ["docker", "dockerfile"],
@@ -109,6 +110,12 @@
                 "!@html-validate/release-scripts"
             ],
             "groupName": "html-validate",
+            "minimumReleaseAge": null
+        },
+
+        {
+            "description": "No minimum release age for lockfile maintenance",
+            "matchUpdateTypes": ["lockFileMaintenance"],
             "minimumReleaseAge": null
         },
 
