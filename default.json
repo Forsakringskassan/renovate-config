@@ -86,7 +86,7 @@
 
         {
             "description": "Group all @fkui/* packages together",
-            "matchPackagePatterns": ["^@fkui/"],
+            "matchPackageNames": ["@fkui/**"],
             "groupSlug": "fkui",
             "groupName": "@fkui packages",
             "separateMultipleMajor": true,
@@ -95,19 +95,19 @@
 
         {
             "description": "Internal packages",
-            "matchPackagePrefixes": ["@forsakringskassan/"],
+            "matchPackageNames": ["@forsakringskassan/**"],
             "minimumReleaseAge": null
         },
 
         {
             "description": "Group all html-validate packages together",
-            "matchPackagePatterns": [
-                "^@html-validate/",
-                "^html-validate-",
-                "-html-validate$",
-                "^html-validate$"
+            "matchPackageNames": [
+                "@html-validate/**",
+                "html-validate",
+                "/^html-validate-/",
+                "/-html-validate$/",
+                "!@html-validate/release-scripts"
             ],
-            "excludePackageNames": ["@html-validate/release-scripts"],
             "groupName": "html-validate",
             "minimumReleaseAge": null
         },
