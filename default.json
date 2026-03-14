@@ -51,7 +51,7 @@
             "matchDepTypes": ["peerDependencies"],
             "matchUpdateTypes": ["major"],
             "semanticCommitType": "feat",
-            "commitMessage": "{{{commitMessagePrefix}}} support {{depName}} v{{newMajor}} {{{commitMessageSuffix}}}"
+            "commitMessageTopic": "support {{depName}} v{{newMajor}}"
         },
 
         {
