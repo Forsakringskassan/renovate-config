@@ -27,7 +27,7 @@
         },
         {
             "matchManagers": ["gradle", "maven"],
-            "excludePackagePrefixes": ["se.fk"]
+            "matchPackageNames": ["!se.fk{/,}**"]
         },
 
         {
