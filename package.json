@@ -27,8 +27,5 @@
   "engines": {
     "node": ">= 16",
     "npm": ">= 7"
-  },
-  "renovate": {
-    "extends": "local>forsakringskassan/renovate-config"
   }
 }
