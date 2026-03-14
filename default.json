@@ -114,15 +114,11 @@
 
         {
             "description": "Add `@forsakringskassan/jest-config` `major` update to Jest monorepo.",
-            "packageRules": [
-                {
-                    "matchSourceUrlPrefixes": [
-                        "https://github.com/Forsakringskassan/jest-config.git"
-                    ],
-                    "matchUpdateTypes": ["major"],
-                    "groupName": "jest monorepo"
-                }
-            ]
+            "matchSourceUrls": [
+                "https://github.com/Forsakringskassan/jest-config.git"
+            ],
+            "matchUpdateTypes": ["major"],
+            "groupName": "jest monorepo"
         },
 
         {
