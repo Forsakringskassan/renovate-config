@@ -22,7 +22,7 @@
   },
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
-    "@forsakringskassan/prettier-config": "1.4.0"
+    "@forsakringskassan/prettier-config": "3.3.6"
   },
   "engines": {
     "node": ">= 16",
