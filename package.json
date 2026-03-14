@@ -18,11 +18,13 @@
   "scripts": {
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
-    "test": "npm run prettier:check"
+    "pretest": "npm run prettier:check",
+    "test": "renovate-config-validator --strict default.json"
   },
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
-    "@forsakringskassan/prettier-config": "3.3.6"
+    "@forsakringskassan/prettier-config": "3.3.6",
+    "renovate": "43.73.2"
   },
   "engines": {
     "node": ">= 16",
