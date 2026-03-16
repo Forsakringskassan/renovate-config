@@ -18,9 +18,11 @@
         "automergeType": "pr"
     },
     "ignoreDeps": ["vue-styleguidist", "vue-cli-plugin-styleguidist"],
-    "ignorePaths": ["**/.mvn/wrapper/maven-wrapper.properties"],
     "minimumReleaseAge": "3 days",
     "lockFileMaintenance": { "enabled": true },
+    "maven-wrapper": {
+        "ignorePaths": ["**/.mvn/wrapper/maven-wrapper.properties"]
+    },
     "packageRules": [
         {
             "matchManagers": ["docker", "dockerfile"],
