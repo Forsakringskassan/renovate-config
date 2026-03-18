@@ -55,7 +55,7 @@
             "matchUpdateTypes": ["major"],
             "semanticCommitType": "feat",
             "commitMessageAction": "support",
-            "commitMessageTopic": "{{depName}} v{{newMajor}}"
+            "commitMessageExtra": "v{{newMajor}}"
         },
 
         {
