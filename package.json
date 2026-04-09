@@ -24,7 +24,7 @@
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
     "@forsakringskassan/prettier-config": "3.3.6",
-    "renovate": "43.104.7"
+    "renovate": "43.104.8"
   },
   "engines": {
     "node": ">= 16",
