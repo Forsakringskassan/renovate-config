@@ -109,8 +109,8 @@
             "matchPackageNames": [
                 "@html-validate/**",
                 "html-validate",
-                "/^html-validate-/",
-                "/-html-validate$/",
+                "html-validate-*",
+                "*-html-validate",
                 "!@html-validate/release-scripts"
             ],
             "groupName": "html-validate",
