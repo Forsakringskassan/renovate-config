@@ -8,6 +8,7 @@
         ":label(renovate)",
         ":prNotPending",
         ":rebaseStalePrs",
+        "helpers:pinGitHubActionDigests",
         "replacements:all"
     ],
     "timezone": "Europe/Stockholm",
