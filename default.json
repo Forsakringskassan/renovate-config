@@ -101,7 +101,7 @@
 
         {
             "description": "Internal packages",
-            "matchPackageNames": ["@forsakringskassan/**"],
+            "matchPackageNames": ["@forsakringskassan/**", "se.fk.*"],
             "minimumReleaseAge": null
         },
 
