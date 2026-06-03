@@ -106,19 +106,6 @@
         },
 
         {
-            "description": "Group all html-validate packages together",
-            "matchPackageNames": [
-                "@html-validate/**",
-                "html-validate",
-                "html-validate-*",
-                "*-html-validate",
-                "!@html-validate/release-scripts"
-            ],
-            "groupName": "html-validate",
-            "minimumReleaseAge": null
-        },
-
-        {
             "description": "No minimum release age for lockfile maintenance",
             "matchUpdateTypes": ["lockFileMaintenance"],
             "minimumReleaseAge": null
