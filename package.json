@@ -23,7 +23,7 @@
   },
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
-    "@forsakringskassan/prettier-config": "3.6.2",
+    "@forsakringskassan/prettier-config": "3.6.3",
     "renovate": "43.210.2"
   },
   "engines": {
