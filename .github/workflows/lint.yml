@@ -17,4 +17,4 @@ jobs:
             - name: Install dependencies
               run: npm ci
             - name: Prettier
-              uses: Forsakringskassan/prettier-config@05bb48dc9e26125d791adc3ea94c91205579aabb # v3.7.2
+              uses: Forsakringskassan/prettier-config@ea1ec6c4f747fb76abe31561baae2ff1bf5a2315 # v3.7.3
