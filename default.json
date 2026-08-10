@@ -106,12 +106,6 @@
         },
 
         {
-            "description": "No minimum release age for lockfile maintenance",
-            "matchUpdateTypes": ["lockFileMaintenance"],
-            "minimumReleaseAge": null
-        },
-
-        {
             "description": "Add `@forsakringskassan/jest-config` `major` update to Jest monorepo.",
             "matchSourceUrls": [
                 "https://github.com/Forsakringskassan/jest-config.git"
