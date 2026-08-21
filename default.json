@@ -26,6 +26,10 @@
     },
     "packageRules": [
         {
+            "matchUpdateTypes": ["digest", "pinDigest", "lockFileMaintenance"],
+            "minimumReleaseAgeBehaviour": "timestamp-optional"
+        },
+        {
             "matchManagers": ["docker", "dockerfile"],
             "enabled": false
         },
