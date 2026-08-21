@@ -27,7 +27,8 @@
     "packageRules": [
         {
             "matchUpdateTypes": ["digest", "pinDigest", "lockFileMaintenance"],
-            "minimumReleaseAgeBehaviour": "timestamp-optional"
+            "minimumReleaseAgeBehaviour": "timestamp-optional",
+            "automerge": true
         },
         {
             "matchManagers": ["docker", "dockerfile"],
