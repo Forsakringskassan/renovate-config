@@ -71,8 +71,7 @@
                 "https://github.com/forsakringskassan/eslint-config"
             ],
             "groupName": "@forsakringskassan/eslint-config monorepo",
-            "groupSlug": "eslint-config-monorepo",
-            "minimumReleaseAge": null
+            "groupSlug": "eslint-config-monorepo"
         },
 
         {
@@ -81,8 +80,7 @@
                 "https://github.com/forsakringskassan/jest-config"
             ],
             "groupName": "@forsakringskassan/jest-config monorepo",
-            "groupSlug": "jest-config-monorepo",
-            "minimumReleaseAge": null
+            "groupSlug": "jest-config-monorepo"
         },
 
         {
@@ -91,8 +89,7 @@
                 "https://github.com/forsakringskassan/prettier-config"
             ],
             "groupName": "@forsakringskassan/prettier-config monorepo",
-            "groupSlug": "prettier-config-monorepo",
-            "minimumReleaseAge": null
+            "groupSlug": "prettier-config-monorepo"
         },
 
         {
@@ -100,14 +97,7 @@
             "matchPackageNames": ["@fkui/**"],
             "groupSlug": "fkui",
             "groupName": "@fkui packages",
-            "separateMultipleMajor": true,
-            "minimumReleaseAge": null
-        },
-
-        {
-            "description": "Internal packages",
-            "matchPackageNames": ["@forsakringskassan/**", "se.fk.*"],
-            "minimumReleaseAge": null
+            "separateMultipleMajor": true
         },
 
         {
