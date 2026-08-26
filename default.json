@@ -123,6 +123,13 @@
             "description": "Update each minor version of typescript separately",
             "matchPackageNames": ["typescript"],
             "separateMinorPatch": true
+        },
+
+        {
+            "description": "Raise PR instead of merging minor versions of typescript",
+            "matchPackageNames": ["typescript"],
+            "matchUpdateTypes": ["minor"],
+            "automerge": false
         }
     ]
 }
