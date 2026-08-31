@@ -41,7 +41,11 @@
 
         {
             "description": "Merge these packages at any time (even during office-hours)",
-            "matchPackageNames": ["@forsakringskassan/**", "@fkui/**"],
+            "matchPackageNames": [
+                "@forsakringskassan/**",
+                "cloneman",
+                "@fkui/**"
+            ],
             "automergeSchedule": ["* * * * *"]
         },
 
@@ -106,7 +110,11 @@
 
         {
             "description": "Internal packages",
-            "matchPackageNames": ["@forsakringskassan/**", "se.fk.*"],
+            "matchPackageNames": [
+                "@forsakringskassan/**",
+                "cloneman",
+                "se.fk.*"
+            ],
             "minimumReleaseAge": null
         },
 
