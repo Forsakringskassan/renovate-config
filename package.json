@@ -24,7 +24,7 @@
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
     "@forsakringskassan/prettier-config": "3.7.8",
-    "renovate": "44.48.3"
+    "renovate": "44.51.0"
   },
   "engines": {
     "node": ">= 16",
@@ -33,6 +33,7 @@
   "allowScripts": {
     "core-js-pure": false,
     "dtrace-provider": false,
+    "protobufjs": false,
     "re2": true
   }
 }
