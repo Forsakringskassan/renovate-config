@@ -21,6 +21,7 @@
     "ignoreDeps": ["vue-styleguidist", "vue-cli-plugin-styleguidist"],
     "minimumReleaseAge": "3 days",
     "lockFileMaintenance": { "enabled": true },
+    "dependencyDashboardLabels": ["renovate"],
     "maven-wrapper": {
         "ignorePaths": ["**/.mvn/wrapper/maven-wrapper.properties"]
     },
