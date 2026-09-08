@@ -91,6 +91,16 @@
         },
 
         {
+            "description": "Group all @forsakringskassan/vitest-config packages together",
+            "matchSourceUrls": [
+                "https://github.com/forsakringskassan/vitest-config"
+            ],
+            "groupName": "@forsakringskassan/vitest-config monorepo",
+            "groupSlug": "vitest-config-monorepo",
+            "minimumReleaseAge": null
+        },
+
+        {
             "description": "Group all @forsakringskassan/prettier packages together",
             "matchSourceUrls": [
                 "https://github.com/forsakringskassan/prettier-config"
@@ -126,6 +136,15 @@
             ],
             "matchUpdateTypes": ["major"],
             "groupName": "jest monorepo"
+        },
+
+        {
+            "description": "Add `@forsakringskassan/vitest-config` `major` update to Vitest monorepo.",
+            "matchSourceUrls": [
+                "https://github.com/Forsakringskassan/vitest-config.git"
+            ],
+            "matchUpdateTypes": ["major"],
+            "groupName": "vitest monorepo"
         },
 
         {
