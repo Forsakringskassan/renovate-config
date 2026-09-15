@@ -130,6 +130,12 @@
         },
 
         {
+            "description": "Group vitest packages",
+            "matchPackageNames": ["@vitest/**", "vitest"],
+            "groupName": "vitest monorepo"
+        },
+
+        {
             "description": "Add `@forsakringskassan/jest-config` `major` update to Jest monorepo.",
             "matchSourceUrls": [
                 "https://github.com/Forsakringskassan/jest-config.git"
