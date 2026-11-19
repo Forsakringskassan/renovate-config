@@ -120,6 +120,19 @@
         },
 
         {
+            "description": "Group stylelint packages together",
+            "groupName": "stylelint packages",
+            "groupSlug": "stylelint",
+            "matchPackageNames": [
+                "stylelint",
+                "stylelint-config-recommended",
+                "stylelint-config-recommended-scss",
+                "stylelint-config-standard",
+                "stylelint-config-standard-scss"
+            ]
+        },
+
+        {
             "description": "Internal packages",
             "matchPackageNames": [
                 "@forsakringskassan/**",
