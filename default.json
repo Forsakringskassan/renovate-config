@@ -4,7 +4,6 @@
         "config:js-lib",
         ":automergeBranch",
         ":automergeMinor",
-        ":dependencyDashboard",
         ":label(renovate)",
         ":prNotPending",
         ":rebaseStalePrs",
@@ -21,7 +20,10 @@
     "ignoreDeps": ["vue-styleguidist", "vue-cli-plugin-styleguidist"],
     "minimumReleaseAge": "3 days",
     "lockFileMaintenance": { "enabled": true },
-    "dependencyDashboardLabels": ["renovate"],
+    "dependencyDashboard": {
+        "enabled": true,
+        "labels": ["renovate"]
+    },
     "maven-wrapper": {
         "ignorePaths": ["**/.mvn/wrapper/maven-wrapper.properties"]
     },
@@ -32,7 +34,7 @@
             "automerge": true
         },
         {
-            "matchManagers": ["docker", "dockerfile"],
+            "matchManagers": ["docker-compose", "dockerfile"],
             "enabled": false
         },
         {
